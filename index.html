@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h1>Enter your name</h1>
+<h3>Enter your name</h3>
 <form>
 <input type="text" id="myform">
 <button onclick="myFunction(event)">Submit</button> 
@@ -16,12 +16,14 @@
 <script>
 function myFunction(event) {
   document.getElementById("demo").innerHTML = "Hello "+document.getElementById("myform").value;
+  location.href = "/name.html";
   event.preventDefault();
 }
 </script>
 
 <style>
-    body { text-align: center; }
+    body { text-align: center; background-image: url("../creativity-1-project/twitterLogo.jpg"); background-size: cover; font-family: Helvetica Neue; }
+    h3 { font-size: 24px; padding: 10px; }
 </style>
 
 </body>
