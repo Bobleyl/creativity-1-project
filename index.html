@@ -1,67 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../creativity-1-project/main.css">
 </head>
 <body>
 
-<h2>Amount of time UTA Provo construction has been going on for:</h2>
-<h1 id="count-up">00:00:00:00</h1>
-<p> </p>
-
-<script>
-      var date1= new Date(2016,06,24);
-      var date2= new Date();
-      var one_day=1000*60*60*24;
-      var date1_ms = date1.getTime();
-      var date2_ms = date2.getTime();
-      var difference_ms = date2_ms - date1_ms;
-      difference_ms = difference_ms/1000;
-      var seconds = Math.floor(difference_ms % 60);
-      difference_ms = difference_ms/60; 
-      var minutes = Math.floor(difference_ms % 60);
-      difference_ms = difference_ms/60; 
-      var hours = Math.floor(difference_ms % 24);  
-      var days = Math.floor(difference_ms/24);
-
-      var startDay = days;
-      var startHour = hours;
-      var startmin = minutes;
-      var startsec = seconds;
-      var day    = startDay + 00;
-      var hour   = startHour + 00;
-	    var min    = startmin + 00;
-      var second = startsec + 00;
-      var zeroPlaceholder = 0;
-      var counterId = setInterval(function(){
-                        countUp();
-                      }, 1000);
-
-      function countUp () {
-          second++;
-          if(second == 59){
-            second = 00;
-            min = min + 1;
-          }if(second == 10){
-              zeroPlaceholder = '';
-          }else
-          if(second == 00){
-              zeroPlaceholder = 0;
-          }
-          if(min == 59 && second == 59){
-            min = 0;
-            second = 0;
-            hour = hour + 1;
-          }
-
-          document.getElementById("count-up").innerText = day+' Days :'+hour+' Hours :'+min+' Mins :'+second+" Seconds";
-      }
-</script>
+<h1>Enter your name.</h1>
 
 <style>
-  body { text-align: center; }
-  h1 { font-size: 32px; font-family: serif; color: red; }
-  img { height: 50px; width: 50px; }
+    body { text-align: center; }
 </style>
 
 </body>
