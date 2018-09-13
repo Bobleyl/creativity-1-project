@@ -5,7 +5,20 @@
 </head>
 <body>
 
-<h1>Enter your name.</h1>
+<h1>Enter your name</h1>
+<form>
+<input type="text" id="myform">
+<button onclick="myFunction(event)">Submit</button> 
+</form>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(event) {
+  document.getElementById("demo").innerHTML = "Hello "+document.getElementById("myform").value;
+  event.preventDefault();
+}
+</script>
 
 <style>
     body { text-align: center; }
