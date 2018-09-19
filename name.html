@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../creativity-1-project/css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   
 <title>Donald Trump Tweet</title>
 <img id="img1" width="1160" height="629" src="img/trumpTweet.jpg"></img>
-<p id="tweet">#</p>
+<p id="tweet" >################################</p>
+
+<script type="text/javascript">
+      var data = [
+        {
+            "tweet": "Ungrateful TRAITOR __name__, stole the last twinkie from the vending machine. Terrible!"
+        },
+        {
+            "tweet": "__name__ has been wrong about me from the very beginning. I totally can down 5 cheeseburgers in one sitting. FAKE NEWS!"
+        },
+        {
+            "tweet": "Crying __name__ \"The Innocent BYU Student\" is excellent at copying and pasting."
+        },
+        {
+            "tweet": "__name__ put up a \"good\" effort. . . but at least they tried hard!"
+        },
+        {
+            "tweet": "__name__ totally endorsed me to run for BYUSA President. MAKE PROVO GREAT AGAIN!"
+        },
+        {
+            "tweet": "The opinion of the so-called \"student\" __name__ is ridiculous and will soon be called FAKE NEWS! SAD!!"
+        },
+        {
+            "tweet": "Despite __name__'s negative press covfefe"
+        },
+        {
+            "tweet": "An \"extremely credible source\" has called my office and told me that @BarackObama's dog is a fraud. That source is __name__"
+        },
+        {
+            "tweet": "Collusion is not a crime, but that doesn't matter because there was NO COLLUSION in regards to the bacon I smuggled into the testing center. __name__ is wrong! WITCH HUNT!"
+        },
+        {
+            "tweet": "Just listened to __name__ singing in the shower. BEST PERFORMANCE EVER!"
+        },
+        {
+            "tweet": "I have never seen __name__ drinking diet coke"
+        },
+        {
+            "tweet": "Everyone is asking me to speak more on __name__. I don't have time except to say \"You don't look good in plaid\""
+        },
+        {
+            "tweet": "Thanks - many (__name__) have said that I'm the best 280 character writer in the world. It's easy when it's fun."
+        },
+        {
+            "tweet": "I did not bubble wrap any statues on campus. This is a witch hunt paid for by __name__. NO COLLUSION!"
+        },
+        {
+            "tweet": "I've just submitted a formal complaint to College Administration about __name__. You don't look good in poka-dots!"
+        },
+        {
+            "tweet": "__name__ just spotted colluding with U of U students just off BYU Campus. Why isn't that being investigated? #CoverUp"
+        },
+        {
+            "tweet": "__name__ is no longer invited to my birthday party. IT'S GOING TO BE YUGE!"
+        }
+    ]
+    var url = window.location.href;
+    var queryStart = url.indexOf("=") + 1;
+    var queryEnd = url.length + 1;
+    var __name__ = url.slice(queryStart, queryEnd - 1).replace("+", " ");
+    var array_len = data.length;
+    var index = parseInt((Math.random() * 20) % array_len);
+    var tweet = data[index]['tweet'].replace("__name__", __name__);
+    var p = document.getElementById("tweet");
+    p.firstChild.nodeValue = tweet;
+</script>
 
 <style>
-  body { background-color: white; text-align: center; }
+  body { background-color: white; text-align: left; }
 </style>
 
 </body>
