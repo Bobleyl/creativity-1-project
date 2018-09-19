@@ -1,0 +1,8 @@
+{
+    "name": "creativity-1-project",
+    "version": "0.0.1",
+    "author": "Bo Bleyl & Kevin Crook",
+    "dependencies": {
+        "express": "^4.15.2"
+    }
+}

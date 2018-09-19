@@ -1,0 +1,13 @@
+version: 1
+
+name: dev
+
+environments:
+  dev:
+    creativity-1-project:
+      type: s3staticsite
+      bucket_name: test
+      path_to_code: ./_site/
+      versioning: disabled
+      index_document: index.html
+      error_document: error.html

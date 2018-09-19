@@ -1,0 +1,19 @@
+version: 1
+
+name: creativity-1-project # Replace with your own app name
+
+pipelines:
+  dev:
+    phases:
+    - type: github
+      name: Source
+      owner: IDT-kcrook # Replace with your own GitHub username
+      repo: Bobleyl/creativity-1-project # Replace with your own GitHub repository name
+      branch: master
+    - type: codebuild
+      name: Build
+      build_image: aws/codebuild/nodejs:6.3.1
+    - type: handel
+      name: Deploy
+      environments_to_deploy:
+      - dev
