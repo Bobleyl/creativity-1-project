@@ -1,15 +1,19 @@
 
 #tweet {
+	font-family: Helvetica Neue;
     position: absolute;
     font-size: xx-large;
     top: 25%;
     left: 5%;
+    right: 5%;
 }
 
 #img1 {
-  position: fixed; 
+  position: absolute; 
   top: 0; 
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
