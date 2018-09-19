@@ -31,7 +31,7 @@ h1 {
 	padding: 2rem;
 }
 
-    .bird--one {
+.bird--one {
       background-image: url(https://apps.bostonglobe.com/opinion/graphics/2017/12/president-twitter/assets/trumpBird.png);
 	    background-size: auto 100%;
 	    width: 88px;
@@ -45,7 +45,7 @@ h1 {
 		  animation-delay: -0.5s;		
 	}
 	
-	.bird--two {
+.bird--two {
 	    background-image: url(https://apps.bostonglobe.com/opinion/graphics/2017/12/president-twitter/assets/trumpBird.png);
 	    background-size: auto 100%;
     	width: 88px;
@@ -59,7 +59,7 @@ h1 {
 		  animation-delay: -0.75s;
 	}
 	
-	.bird--three {
+.bird--three {
 	    background-image: url(https://apps.bostonglobe.com/opinion/graphics/2017/12/president-twitter/assets/trumpBird.png);
 	    background-size: auto 100%;
 	    width: 88px;
@@ -73,7 +73,7 @@ h1 {
 		  animation-delay: -0.25s;
 	}
 	
-	.bird--four {
+.bird--four {
 	    background-image: url(https://apps.bostonglobe.com/opinion/graphics/2017/12/president-twitter/assets/trumpBird.png);
 	    background-size: auto 100%;
 	    width: 88px;
@@ -87,7 +87,7 @@ h1 {
 		  animation-delay: -0.5s;
 	}
 
-	.bird-container--one {
+.bird-container--one {
 	    position: absolute;
 	    top: 30%;
 	    left: -10%;
@@ -101,7 +101,7 @@ h1 {
 		  animation-delay: 0;
 	}
 	
-	.bird-container--two {
+.bird-container--two {
 	    position: absolute;
 	    top: 30%;
 	    left: -10%;
@@ -115,7 +115,7 @@ h1 {
 		animation-delay: 1s;
 	}
 	
-	.bird-container--three {
+.bird-container--three {
 	    position: absolute;
 	    top: 30%;
     	left: -10%;
@@ -129,7 +129,7 @@ h1 {
 		animation-delay: 9.5s;
 	}
 	
-	.bird-container--four {
+.bird-container--four {
 	    position: absolute;
 	    top: 30%;
     	left: -10%;
@@ -142,7 +142,6 @@ h1 {
 		animation-duration: 16s;
 		animation-delay: 10.25s;
 	}
-
 
 @keyframes fly-cycle {
 	
